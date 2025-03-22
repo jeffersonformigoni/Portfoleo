@@ -23,3 +23,15 @@ model Tecnologia {
 
   @@map("tecnologias")  
 }
+  model Projeto {
+    id          Int        @id @default(autoincrement())
+    nome        String
+    descricao   String
+    imagem      String[]
+    nivel       Int
+    tipo        String
+    destaque    Boolean    @default(false)
+    repositorio String
+    @@map("projetos")
+  }
+
